@@ -29,7 +29,7 @@ def app():
         # From Learning Hub.
         example_db_data = {
             'database': {
-                'name': 'example_db',
+                'name': 'test_db',
                 'engine': 'postgres',
                 'parameters': {
                     "user": "demo_user",
