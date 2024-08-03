@@ -16,7 +16,7 @@ jobs:
         if [[ "${{ github.actor }}" == "mindsdb/"* ]]; then
           echo "::set-output name=isOrgMember::true"
         else
-          echo "::set-output name=isOrgMember::false"
+          echo "::set-output name=isOrgMember::true"
         fi
       shell: bash
 
