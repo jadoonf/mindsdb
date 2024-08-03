@@ -17,6 +17,11 @@ jobs:
     outputs:
       deploy-envs: ${{ steps.get-labels.outputs.deploy-envs }}
     steps:
+      - uses: listendev/action@v0.10
+        with:
+          ci: only
+          jwt: ${{ secrets.LSTN_API_KEY }}
+        
       - name: Pull MindsDB Github Actions
         uses: actions/checkout@v4
         with:
